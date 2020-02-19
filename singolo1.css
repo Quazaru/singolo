@@ -31,11 +31,12 @@ nav {
     width: 420px;
 }
 header .header-nav a{
+    font-stretch: ultra-condensed;
     font-weight: bold;
     font-size: 12.4px;
     text-decoration: none;
     color: #ffffff;
-    margin-right: 29px;
+   /* margin-right: 29px;*/
 }
 .logo{
     margin-left: 40px;
@@ -49,8 +50,20 @@ header .header-nav a{
 .header-logo-star {
     color: #f06c64;
 }
-header .header-nav a::after{
-    content: '.';
+.header-dotted-link::after{
+    content: '\00B7';
+    margin: 0px 12.6px;
     display: inline-block;
-    margin: auto;
+    color: #494e62;
+    
+}
+header .header-nav a:hover {
+    color: #f06c64;
+
+}
+/* MAIN */
+.main-slider {
+    margin-top: 6px;
+    height: 600px;
+    background-color: #f06c64;
 }
