@@ -8,23 +8,22 @@
 header .container{
     display: flex;
     margin-top: auto;
-    padding-top: 33px;
+    padding-top: 30px;
 
 }
 header{  
     font-stretch: ultra-condensed;  
     letter-spacing: -0.6px;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: bold;
     background-color: #2d303a;
     color: #ffffff;
-    height: 92px;
-    box-shadow:   0 0px 0px 6px  #323746;
+    height: 90px;
+    position: relative;
+    box-shadow: 0px 0px 0 5px #323746
 
 }
-nav {
-    
-}
+
 .header-nav{
     
     margin-top: 8px;
@@ -52,7 +51,7 @@ header .header-nav a{
 }
 .header-dotted-link::after{
     content: '\00B7';
-    margin: 0px 12.6px;
+    margin: 0px 12.7px;
     display: inline-block;
     color: #494e62;
     
@@ -64,6 +63,46 @@ header .header-nav a:hover {
 /* MAIN */
 .main-slider {
     margin-top: 6px;
-    height: 600px;
+    height: 593px;
     background-color: #f06c64;
+}
+/* SLIDER */
+.main-slider{
+    box-shadow:   0 0px 0px 6px  #ea676b;
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-slider-left-arrow , .main-slider-right-arrow {
+    display: inline-block;
+    position: absolute;
+    top: 375px;
+}
+.main-slider-right-arrow {
+    right: 0;
+}
+.slide{
+    display: inline-block;
+    margin: 0 108px;
+}
+.vertical-phone {
+    margin-top: 53px;
+    margin-left: 5px;
+    
+}
+.horizontal-phone {
+    margin-bottom: 122px;
+    margin-left: 67px;
+}
+.main-slider-left-arrow , .main-slider-right-arrow {
+    background: none;
+    border: none;
+
+}
+.main-slider-left-arrow{
+ margin-left: 35px;
+}
+.main-slider-right-arrow{
+    margin-right: 136px;
 }
