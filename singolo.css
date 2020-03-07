@@ -7,8 +7,9 @@ h1{
     margin: 0;
 }
 .container{
-    
-    width: 1020px;
+    list-style: none;
+    text-decoration: none;
+    width: 1024px;
     margin: 0 auto;
 }
 header .container{
@@ -64,6 +65,7 @@ header .header-nav a{
 }
 header .header-nav a:hover {
     color: #f06c64;
+    transition: 0.2s;
 
 }
 /* MAIN */
@@ -259,6 +261,7 @@ header .header-nav a:hover {
 .portfolio-categorys ul>li:hover {
     border-color: #c5c5c5;
     color: #dedede;
+    transition: 0.3s;
 }
 /* GALLERY */
 .portfolio  {
@@ -350,7 +353,138 @@ header .header-nav a:hover {
 .card ul>li {
     margin-right: 10px;
 }
+/* QUOTE */
+.quote {
+    
+    background-color: #f06c64;
+    color: #f0d8d9;
+    font-size: 18px;
+    padding-bottom: 68px;
+    border-bottom: 5px solid #ea676b;
 
+}
+.quote .container {
+    width: 940px;
+}
+.quote h2 {
+    font-size: 30px;
+    margin: 0;
+    padding-top: 60px;
+}
+.quote p {
+    line-height: 30px;
+    font-family: Lato Light;
+    letter-spacing: 0.15px;
+    margin-bottom: 45px;
+}
+.quote-form input {
+    padding-left: 10px;
+    color: #f08587;
+    margin-bottom: 17px;
+    font-size: 12px;
+    width: 610px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d6564f;
+   
 
+} 
+.quote-form input::placeholder , .quote-form textarea::placeholder {
+    color: #f08587;
+    font-size: 12px;
+    margin: auto 0;
+    padding-left: 5px;
+}
+.quote-form input:focus ,  .quote-form textarea:focus{
+    transition: 0.3s;
+    bottom: 1px solid #fff;
+    background-color: #d16a65;
+    color: wheat;
+    border: none;
+    outline: none;
+}
+.quote-form textarea::placeholder {
+    padding-top: 0px;
+}
+.quote textarea {
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #f08587;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    width: 610px;
+    height: 190px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d6564f;
+    resize: none;
 
+}
+.quote-flex-wrap {
+    display: flex;
+}
+.quote-info {
+    margin-left: 17px;
+}
+.quote-info h3 {
+    font-size: 18px;
+    margin: 0;
+}
+.quote-info p {
+   word-break: break-all;
+   letter-spacing: -0.05px;
+    margin: 0;
+    margin-top: 8px;
+    font-family: Lato Regular;
+    font-size: 12px;
+    line-height: 21.56px;
+    display: inline-block;
+}
+.quote-info ul {
+    margin-top: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.quote-info ul li {
+    height: 20px;
+    margin: 0 auto;
+}
+.quote-info ul li{
+    margin-top: 2px;
+}
+.quote-info-list {
+    margin-top: 17px;
+}
+.quote-info-img-wrap {
+    display: inline-block;
+    width: 20px;
 
+}
+.geo-wrap img {
+    margin-left: 3px;
+}
+footer{
+   
+    height: 80px;
+    background-color: #2d303a;
+    color: #484c5f;
+    
+}
+footer .container {
+    
+    width: 938px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+footer .social-media img {
+    margin-top: 0;
+    padding-top: 22px;
+    margin-right: 4px;
+}
+footer .copyright {
+    padding-top: 30px;
+}
